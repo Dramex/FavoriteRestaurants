@@ -9,6 +9,8 @@ import (
 func main() {
 	r := gin.Default()
 	r.POST("/signup", Routes.SignUp)
+	r.POST("/login", Routes.SignIn)
+	
 	mongo.Mongo() // connect to database :-)
 
 	r.Run(":8989") // listen and serve on 0.0.0.0:8080

@@ -6,6 +6,7 @@ import (
 	"time"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+    b64 "encoding/base64"
 )
 var Users *mongo.Collection
 var Ctx context.Context
